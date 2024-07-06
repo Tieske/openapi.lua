@@ -14,19 +14,19 @@ The scope of what is covered by the version number excludes:
 
 - create a release branch
 - update the changelog below
-- update version and copyright-years in `./LICENSE.md` and `./src/[module-name]/init.lua` (in doc-comments
+- update version and copyright-years in `./LICENSE.md` and `./src/openapi/init.lua` (in doc-comments
   header, and in module constants)
 - create a new rockspec and update the version inside the new rockspec:<br/>
-  `cp [module-name]-scm-1.rockspec ./rockspecs/[module-name]-X.Y.Z-1.rockspec`
+  `cp openapi-scm-1.rockspec ./rockspecs/openapi-X.Y.Z-1.rockspec`
 - test: run `make test` and `make lint`
 - clean and render the docs: run `make clean` and `make docs`
 - commit the changes as `release X.Y.Z`
 - push the commit, and create a release PR
 - after merging tag the release commit with `X.Y.Z`
 - upload to LuaRocks:<br/>
-  `luarocks upload ./rockspecs/[module-name]-X.Y.Z-1.rockspec --api-key=ABCDEFGH`
+  `luarocks upload ./rockspecs/openapi-X.Y.Z-1.rockspec --api-key=ABCDEFGH`
 - test the newly created rock:<br/>
-  `luarocks install [module-name]`
+  `luarocks install openapi`
 
 ## Version history
 

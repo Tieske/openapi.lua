@@ -1,6 +1,6 @@
-project='[repo-name]'
-title='[module-name] docs'
-description='[short-description]'
+project='openapi.lua'
+title='openapi docs'
+description='Generate Lua functions to call OpenAPI operations'
 
 format='markdown'
 use_markdown_titles = true
